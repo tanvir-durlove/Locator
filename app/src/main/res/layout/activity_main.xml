@@ -84,6 +84,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/feedback"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_margin="5dp"
