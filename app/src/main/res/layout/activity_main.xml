@@ -59,6 +59,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/accesories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/find_offline"
@@ -99,5 +100,11 @@
                 android:text="Give Feedback" />
         </RelativeLayout>
     </LinearLayout>
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accesories"
+        android:text="LOGOUT"/>
 
 </RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "992425576061",
+    "firebase_url": "https://locator-237715.firebaseio.com",
+    "project_id": "locator-237715",
+    "storage_bucket": "locator-237715.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992425576061:android:338a46fceffe5fd0",
+        "android_client_info": {
+          "package_name": "rifat.finalproject.locator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992425576061-s507d7eb3b8bq82befrmg3ih65napit1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rifat.finalproject.locator",
+            "certificate_hash": "77bde99d8c8b271182f79e0e92ef4aae026445ea"
+          }
+        },
+        {
+          "client_id": "992425576061-o1nnbfao556gu157ajf2po69fqb7n4r3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP5E1JAKA6i1WPYBSVRGp6QXD2S2hnpiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992425576061-o1nnbfao556gu157ajf2po69fqb7n4r3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
