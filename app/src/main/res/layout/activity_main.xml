@@ -3,108 +3,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:gravity="center">
+    android:gravity="center"
+    tools:context=".MainActivity">
 
-
-    <LinearLayout
-        android:id="@+id/find_online"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:baselineAligned="false"
-        android:orientation="horizontal">
-
+        android:layout_centerInParent="true"
+        android:gravity="center">
 
         <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/card_background">
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ce93d8">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:src="@drawable/ic_my_location_black_24dp" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:id="@+id/current_address"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
                 android:gravity="center"
-                android:text="Find Online" />
+                android:layout_centerInParent="true"
+                android:hint="Turn on your location to \nshow current position"
+                android:textStyle="bold"
+                android:lines="5"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
         </RelativeLayout>
-    </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/find_offline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/find_online"
-        android:layout_margin="20dp"
-        android:baselineAligned="false"
-        android:orientation="horizontal">
 
-        <RelativeLayout
-            android:id="@+id/offline_content"
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/card_background">
+        <LinearLayout
+            android:id="@+id/find_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl"
+            android:layout_margin="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#81d4fa"
-                android:gravity="center"
-                android:text="Find Offline" />
-        </RelativeLayout>
-    </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/accesories"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/find_offline"
-        android:layout_margin="20dp"
-        android:baselineAligned="false"
-        android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_background">
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/card_background">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="Find Online" />
+            </RelativeLayout>
+        </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#ffa000
+        <LinearLayout
+            android:id="@+id/find_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_online"
+            android:layout_margin="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/offline_content"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#81d4fa"
+                    android:gravity="center"
+                    android:text="Find Offline" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accesories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_offline"
+            android:layout_margin="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffa000
 
 "
-                android:gravity="center"
-                android:text="How to Use" />
-        </RelativeLayout>
+                    android:gravity="center"
+                    android:text="How to Use" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/feedback"
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/card_background">
+            <RelativeLayout
+                android:id="@+id/feedback"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_background">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#689f38"
-                android:gravity="center"
-                android:text="Give Feedback" />
-        </RelativeLayout>
-    </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#689f38"
+                    android:gravity="center"
+                    android:text="Give Feedback" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
     <Button
         android:id="@+id/signout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/accesories"
-        android:text="LOGOUT"/>
+        android:layout_alignParentBottom="true"
+        android:text="LOGOUT"
+        android:background="@color/colorPrimary"/>
 
 </RelativeLayout>

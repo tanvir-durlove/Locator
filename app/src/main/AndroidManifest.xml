@@ -39,9 +39,13 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".Nearby"></activity>
+        <activity android:name=".Nearby"/>
         <activity android:name=".OfflineContent" />
-        <activity android:name=".Singin_activity"></activity>
+        <activity android:name=".Singin_activity"/>
+
+        <service
+            android:name=".GetAddressIntentService"
+            android:exported="false"/>
     </application>
 
 </manifest>
