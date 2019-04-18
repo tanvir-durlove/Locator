@@ -1,5 +1,6 @@
 package rifat.finalproject.locator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -42,4 +43,11 @@ public class OfflineContent extends AppCompatActivity {
             }
         });
     }
-}
+    @Override
+    public void onBackPressed() {
+        Intent intent=new Intent(OfflineContent.this,MainActivity.class);
+        startActivity(intent);
+        finish();
+
+
+    }}

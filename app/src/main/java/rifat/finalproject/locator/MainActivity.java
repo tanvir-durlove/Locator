@@ -1,8 +1,10 @@
 package rifat.finalproject.locator;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -76,5 +78,20 @@ public class MainActivity extends AppCompatActivity {
                 mAuth.signOut();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+
+        new AlertDialog.Builder(this).setIcon(R.drawable.ic_close_black_24dp)
+                .setTitle("EXIT???")
+                .setMessage("Are you sure you want to exit?")
+                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        MainActivity.super.onBackPressed();
+                    }
+                }).create().show();
+
     }
 }

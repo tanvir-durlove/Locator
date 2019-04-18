@@ -15,8 +15,15 @@ import java.util.HashMap;
 
 
 public class OfflineDustbinFragment extends ListFragment {
-    String[] dustbin = {"G", "H", "I"};
-    String[] location = {"J", "K", "L"};
+    String[] dustbin = {"kalabagan","Khamar Bari","Mohammadpur town hall","Begum Rokeya Avenue","Tejgaon",
+    "Mirpur1","Mirpur 14","New Market","Hatirjheel","Mohakhali",
+    "Kalyanpur","Badda","Gabtoli Bus Terminal","Gulistan","Jatrabari","Shahabag","Shankar"};
+
+    String[] location = {"kalabagan Lazz Pharma","Khamar Bari Circle","Mohammadpur Town hall","Begum Rokeya Avenue",
+            "Tejgaon Bus Stand","Mirpur1 Bazar","Mirpur 14 Circle","New Market Footover Bridge","Hatirjheel Circle",
+            "Mohakhali Bus Stand","Kalyanpur Bus Stand","Badda Circle",
+            "Gabtoli Bus Terminal","Gulistan DCC Market","Jatrabari Near Flyover","Shahabag Circle",
+            "Shankar Bus Stand"};
 
     ArrayList<HashMap<String, String>> data = new ArrayList<HashMap<String, String>>();
     SimpleAdapter adapter;
@@ -35,7 +42,7 @@ public class OfflineDustbinFragment extends ListFragment {
         }
 
         String[] from = {"Dustbin", "Locations"};
-        int[] to = {R.id.dustbin, R.id.location};
+        int[] to = {R.id.toilet, R.id.location};
 
         adapter = new SimpleAdapter(getActivity(), data, R.layout.tab_fragment_1, from, to);
         setListAdapter(adapter);
@@ -56,5 +63,6 @@ public class OfflineDustbinFragment extends ListFragment {
             }
         });
     }
+
 
 }
