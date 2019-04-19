@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
@@ -13,8 +12,8 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -30,12 +29,14 @@
         <activity android:name=".Nearby" />
         <activity android:name=".OfflineContent" />
         <activity android:name=".Singin_activity" />
+
         <service
             android:name=".GetAddressIntentService"
             android:exported="false" />
 
-        <activity android:name=".SearchActivity"/>
-        <activity android:name=".SingleItemView"/>
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".SingleItemView" />
+        <activity android:name=".NearbyOnline"></activity>
     </application>
 
 </manifest>

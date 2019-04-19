@@ -32,7 +32,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    RelativeLayout offline_content,feedback,rl_search_offline;
+    RelativeLayout offline_content,feedback,rl_search_offline,rl_search_online;
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListner;
 
@@ -74,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, SearchActivity.class);
+                finish();
+                startActivity(i);
+            }
+        });
+        rl_search_online = (RelativeLayout)findViewById(R.id.rl_search_online);
+        rl_search_online.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, NearbyOnline.class);
                 finish();
                 startActivity(i);
             }
