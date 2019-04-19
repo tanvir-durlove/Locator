@@ -106,6 +106,7 @@
             android:orientation="horizontal">
 
             <RelativeLayout
+                android:id="@+id/rl_search_offline"
                 android:layout_width="0dp"
                 android:layout_height="110dp"
                 android:layout_margin="5dp"
@@ -115,11 +116,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#ffa000
-
-"
+                    android:background="#ffa000"
                     android:gravity="center"
-                    android:text="How to Use" />
+                    android:text="Search Your Desire \nLocation" />
             </RelativeLayout>
 
             <RelativeLayout
