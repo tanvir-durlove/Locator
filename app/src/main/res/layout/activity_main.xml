@@ -16,7 +16,10 @@
             android:id="@+id/rl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp"
             android:background="#ce93d8">
 
             <ImageView
@@ -32,13 +35,12 @@
             <TextView
                 android:id="@+id/current_address"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="95dp"
                 android:gravity="center"
                 android:layout_centerInParent="true"
                 android:hint="Turn on your location to \nshow current position"
                 android:textStyle="bold"
                 android:lines="5"
-                android:layout_margin="5dp"
                 android:padding="5dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
         </RelativeLayout>
@@ -49,15 +51,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rl"
-            android:layout_margin="10dp"
-            android:baselineAligned="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp"            android:baselineAligned="false"
             android:orientation="horizontal">
 
 
             <RelativeLayout
                 android:id="@+id/rl_search_online"
                 android:layout_width="0dp"
-                android:layout_height="110dp"
+                android:layout_height="95dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/card_background">
@@ -76,14 +80,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/find_online"
-            android:layout_margin="10dp"
-            android:baselineAligned="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp"            android:baselineAligned="false"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:id="@+id/offline_content"
                 android:layout_width="0dp"
-                android:layout_height="110dp"
+                android:layout_height="95dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/card_background">
@@ -102,14 +108,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/find_offline"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="0dp"
             android:baselineAligned="false"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:id="@+id/rl_search_offline"
                 android:layout_width="0dp"
-                android:layout_height="110dp"
+                android:layout_height="95dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/card_background">
@@ -125,7 +134,7 @@
             <RelativeLayout
                 android:id="@+id/feedback"
                 android:layout_width="0dp"
-                android:layout_height="110dp"
+                android:layout_height="95dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/card_background">
