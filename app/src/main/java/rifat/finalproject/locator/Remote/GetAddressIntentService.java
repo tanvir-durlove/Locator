@@ -1,4 +1,4 @@
-package rifat.finalproject.locator;
+package rifat.finalproject.locator.Remote;
 
 import android.app.IntentService;
 import android.content.Intent;

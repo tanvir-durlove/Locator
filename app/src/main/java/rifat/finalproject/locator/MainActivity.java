@@ -29,6 +29,8 @@ import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.firebase.auth.FirebaseAuth;
 
+import rifat.finalproject.locator.Remote.GetAddressIntentService;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -96,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(Intent.ACTION_SENDTO);
                 i.setData(Uri.parse("mailto:"));
 //                i.setType("message/rfc822");
-                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"admin.locator@gmail.com"});
+                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"rifat35-1177@diu.edu.bd"});
                 i.putExtra(Intent.EXTRA_SUBJECT, "Feedback for Locator");
                 i.putExtra(Intent.EXTRA_TEXT   , "");
                 try {

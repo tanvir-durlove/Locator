@@ -1,4 +1,4 @@
-package rifat.finalproject.locator;
+package rifat.finalproject.locator.Remote;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -33,6 +33,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import rifat.finalproject.locator.Model.MyPlaces;
 import rifat.finalproject.locator.Model.Results;
+import rifat.finalproject.locator.R;
+import rifat.finalproject.locator.Remote.Common;
 import rifat.finalproject.locator.Remote.IGoogleApiService;
 
 public class Nearby extends FragmentActivity implements OnMapReadyCallback,

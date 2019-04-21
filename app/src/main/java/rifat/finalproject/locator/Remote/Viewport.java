@@ -1,4 +1,4 @@
-package rifat.finalproject.locator;
+package rifat.finalproject.locator.Remote;
 
 import rifat.finalproject.locator.Model.Southwest;
 import rifat.finalproject.locator.Model.Northeast;

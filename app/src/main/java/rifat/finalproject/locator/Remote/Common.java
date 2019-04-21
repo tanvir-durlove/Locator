@@ -1,4 +1,4 @@
-package rifat.finalproject.locator;
+package rifat.finalproject.locator.Remote;
 
 import rifat.finalproject.locator.Remote.IGoogleApiService;
 import rifat.finalproject.locator.Remote.RetrofitClient;

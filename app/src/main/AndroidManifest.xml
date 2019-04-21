@@ -26,12 +26,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Nearby" />
+        <activity android:name=".Remote.Nearby" />
         <activity android:name=".OfflineContent" />
         <activity android:name=".Singin_activity" />
 
         <service
-            android:name=".GetAddressIntentService"
+            android:name=".Remote.GetAddressIntentService"
             android:exported="false" />
 
         <activity android:name=".SearchActivity" />

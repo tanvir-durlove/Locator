@@ -1,6 +1,6 @@
 package rifat.finalproject.locator.Model;
 
-import rifat.finalproject.locator.Viewport;
+import rifat.finalproject.locator.Remote.Viewport;
 
 public class Geometry {
 
