@@ -3,15 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/layer_card_background"
     android:layout_marginLeft="20dp"
-    android:layout_marginTop="30dp">
+    android:layout_marginTop="30dp"
+    android:background="@drawable/layer_card_background">
+
     <TextView
         android:id="@+id/ranklabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zone : "
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/rank"
@@ -21,11 +22,11 @@
 
     <TextView
         android:id="@+id/countrylabel"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ranklabel"
-        android:text="Place : " />
+        android:text="Place : "
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/country"
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/countrylabel"
         android:text="Category : "
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/population"
@@ -49,13 +50,46 @@
         android:layout_below="@+id/country"
         android:layout_toRightOf="@+id/populationlabel" />
 
+    <TextView
+        android:id="@+id/timelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/populationlabel"
+        android:text="Opening/Closing : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/populationlabel"
+        android:layout_toRightOf="@+id/timelabel"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/costlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timelabel"
+        android:text="Charge : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timelabel"
+        android:layout_toRightOf="@+id/costlabel"
+        android:text="" />
+
+
     <ImageView
         android:id="@+id/flag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
         android:padding="1dp" />
 
 </RelativeLayout>

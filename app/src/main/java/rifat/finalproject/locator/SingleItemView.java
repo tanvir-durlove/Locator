@@ -10,9 +10,9 @@ public class SingleItemView extends Activity {
     // Declare Variables
     TextView txtrank;
     TextView txtcountry;
-    TextView txtpopulation;
+    TextView txtpopulation,txttime,txtcost;
     ImageView imgflag;
-    String rank;
+    String rank,time,cost;
     String country;
     String population;
     int flag;
@@ -29,6 +29,8 @@ public class SingleItemView extends Activity {
         country = i.getStringExtra("country");
         // Get the results of population
         population = i.getStringExtra("population");
+        time = i.getStringExtra("time");
+        cost = i.getStringExtra("cost");
         // Get the results of flag
         flag = i.getIntExtra("flag", flag);
 
@@ -36,6 +38,9 @@ public class SingleItemView extends Activity {
         txtrank = (TextView) findViewById(R.id.rank);
         txtcountry = (TextView) findViewById(R.id.country);
         txtpopulation = (TextView) findViewById(R.id.population);
+        txttime = (TextView) findViewById(R.id.time);
+        txtcost= (TextView) findViewById(R.id.cost);
+
 
         // Locate the ImageView in singleitemview.xml
         imgflag = (ImageView) findViewById(R.id.flag);
@@ -44,6 +49,8 @@ public class SingleItemView extends Activity {
         txtrank.setText(rank);
         txtcountry.setText(country);
         txtpopulation.setText(population);
+        txtcost.setText(cost);
+        txttime.setText(time);
 
         // Load the image into the ImageView
         imgflag.setImageResource(flag);

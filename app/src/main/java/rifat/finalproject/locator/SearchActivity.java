@@ -20,6 +20,8 @@ public class SearchActivity extends Activity {
     String[] zone;
     String[] place;
     String[] category;
+    String[] time;
+    String[] cost;
     int[] flag;
     ArrayList<SearchModel> arraylist = new ArrayList<SearchModel>();
 
@@ -55,6 +57,17 @@ public class SearchActivity extends Activity {
                 "Toilet","Toilet","Toilet","Toilet","Toilet","Toilet","Toilet","Toilet","Toilet","Toilet","Toilet","Toilet","Toilet",
                 "Toilet","Toilet","Toilet","Toilet","Toilet","Toilet"};
 
+        time = new String[]{"6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM",
+                "6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM",
+                "6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM",
+                "6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM"};
+
+        cost = new String[]{"Free","Free","Free","Free","Free","Free","Free","Free","Free","Free","Free","Free","Free","Free","Free","Free","Free",
+        "Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka",
+                "Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka",
+                "Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka",
+                "Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka"};
+
         flag = new int[] { R.drawable.ic_delete_black_24dp,R.drawable.ic_delete_black_24dp,R.drawable.ic_delete_black_24dp,R.drawable.ic_delete_black_24dp,
                 R.drawable.ic_delete_black_24dp,R.drawable.ic_delete_black_24dp,R.drawable.ic_delete_black_24dp,R.drawable.ic_delete_black_24dp,
                 R.drawable.ic_delete_black_24dp,R.drawable.ic_delete_black_24dp,R.drawable.ic_delete_black_24dp,R.drawable.ic_delete_black_24dp,
@@ -71,7 +84,7 @@ public class SearchActivity extends Activity {
         for (int i = 0; i < zone.length -1; i++)
         {
             SearchModel wp = new SearchModel(zone[i], place[i],
-                    category[i], flag[i]);
+                    category[i],time [i],cost[i], flag[i]);
             // Binds all strings into an array
             arraylist.add(wp);
         }

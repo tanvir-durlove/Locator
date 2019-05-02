@@ -35,6 +35,8 @@ public class ListViewAdapter extends BaseAdapter {
         TextView rank;
         TextView country;
         TextView population;
+        TextView time;
+        TextView cost;
         ImageView flag;
     }
 
@@ -62,6 +64,10 @@ public class ListViewAdapter extends BaseAdapter {
             holder.rank = (TextView) view.findViewById(R.id.rank);
             holder.country = (TextView) view.findViewById(R.id.country);
             holder.population = (TextView) view.findViewById(R.id.population);
+            holder.time = (TextView) view.findViewById(R.id.time);
+            holder.cost = (TextView) view.findViewById(R.id.cost);
+
+
             // Locate the ImageView in listview_item.xml
             holder.flag = (ImageView) view.findViewById(R.id.flag);
             view.setTag(holder);
@@ -71,6 +77,8 @@ public class ListViewAdapter extends BaseAdapter {
         // Set the results into TextViews
         holder.rank.setText(worldpopulationlist.get(position).getRank());
         holder.country.setText(worldpopulationlist.get(position).getCountry());
+        holder.time.setText(worldpopulationlist.get(position).getTime());
+        holder.cost.setText(worldpopulationlist.get(position).getCost());
         holder.population.setText(worldpopulationlist.get(position)
                 .getPopulation());
         // Set the results into ImageView
@@ -90,8 +98,15 @@ public class ListViewAdapter extends BaseAdapter {
                 intent.putExtra("country",
                         (worldpopulationlist.get(position).getCountry()));
                 // Pass all data population
+                intent.putExtra("time",
+                        (worldpopulationlist.get(position).getTime()));
+
+                intent.putExtra("cost",
+                        (worldpopulationlist.get(position).getCost()));
+
                 intent.putExtra("population",
                         (worldpopulationlist.get(position).getPopulation()));
+
                 // Pass all data flag
                 intent.putExtra("flag",
                         (worldpopulationlist.get(position).getFlag()));

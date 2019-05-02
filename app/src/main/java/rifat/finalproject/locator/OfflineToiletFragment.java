@@ -30,6 +30,14 @@ public class OfflineToiletFragment extends ListFragment {
     "Bijoy Sarani Begum Rokeya Sarani Link Road","Badda Rd No 13, Dhaka 1212","Chandrima Udyan Rd",
     "81 Panir Pumper Goli, Dhaka 1216","Indira Road, Dhaka 1215","Mohakhali Rail Gate"};
 
+    String [] time = {"6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM",
+            "6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM"};
+
+    String [] cost = {"Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka",
+            "Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka",
+            "Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka",
+            "Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka","Pee : 05 Taka\nCloset:10Taka"};
+
     ArrayList<HashMap<String, String>> data = new ArrayList<HashMap<String, String>>();
     SimpleAdapter adapter;
 
@@ -43,11 +51,13 @@ public class OfflineToiletFragment extends ListFragment {
             map = new HashMap<String, String>();
             map.put("Toilets", toilets[i]);
             map.put("Locations", location[i]);
+            map.put("Cost",cost[i]);
+            map.put("Time",time[i]);
             data.add(map);
         }
 
-        String[] from = {"Toilets", "Locations"};
-        int[] to = {R.id.toilet, R.id.location};
+        String[] from = {"Toilets", "Locations","Cost","Time"};
+        int[] to = {R.id.toilet, R.id.location,R.id.cost,R.id.time};
 
         adapter = new SimpleAdapter(getActivity(), data, R.layout.tab_fragment_2, from, to);
         setListAdapter(adapter);
