@@ -48,6 +48,5 @@ public class OfflineContent extends AppCompatActivity {
         Intent intent=new Intent(OfflineContent.this,MainActivity.class);
         startActivity(intent);
         finish();
-
-
-    }}
+    }
+}

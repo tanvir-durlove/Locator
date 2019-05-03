@@ -55,4 +55,11 @@ public class SingleItemView extends Activity {
         // Load the image into the ImageView
         imgflag.setImageResource(flag);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent=new Intent(SingleItemView.this,SearchActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

@@ -1,12 +1,8 @@
 package rifat.finalproject.locator;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-
+import android.content.Intent;
 import android.graphics.Bitmap;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -68,5 +64,12 @@ public class NearbyOnline extends Activity {
             return true;
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent=new Intent(NearbyOnline.this,MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

@@ -25,6 +25,10 @@ public class OfflineDustbinFragment extends ListFragment {
             "Gabtoli Bus Terminal","Gulistan DCC Market","Jatrabari Near Flyover","Shahabag Circle",
             "Shankar Bus Stand"};
 
+    String [] time = {"6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM",
+            "6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM","6 AM - 12 AM"};
+
+
     ArrayList<HashMap<String, String>> data = new ArrayList<HashMap<String, String>>();
     SimpleAdapter adapter;
 
@@ -38,11 +42,13 @@ public class OfflineDustbinFragment extends ListFragment {
             map = new HashMap<String, String>();
             map.put("Dustbin", dustbin[i]);
             map.put("Locations", location[i]);
+            map.put("Time", time[i]);
+
             data.add(map);
         }
 
-        String[] from = {"Dustbin", "Locations"};
-        int[] to = {R.id.toilet, R.id.location};
+        String[] from = {"Dustbin", "Locations","Time"};
+        int[] to = {R.id.toilet, R.id.location,R.id.time};
 
         adapter = new SimpleAdapter(getActivity(), data, R.layout.tab_fragment_1, from, to);
         setListAdapter(adapter);
